@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NexFlow - Automatización Inteligente de Procesos</title>
+  <meta name="description"
+    content="Automatiza tus flujos de trabajo con IA. Conecta aplicaciones, crea agentes autónomos y escala tu productividad sin código.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <!-- Navbar -->
+    <nav class="navbar glass">
+      <div class="container nav-container">
+        <div class="logo">
+          <div class="logo-icon"></div>
+          <span>NexFlow</span>
+        </div>
+        <div class="nav-links">
+          <a href="#features">Características</a>
+          <a href="#solutions">Soluciones</a>
+          <a href="#pricing">Precios</a>
+          <a href="#resources">Recursos</a>
+        </div>
+        <div class="nav-actions">
+          <a href="#" class="btn-text">Iniciar Sesión</a>
+          <a href="#" class="btn btn-primary">Empezar Gratis</a>
+        </div>
+        <button class="mobile-menu-btn" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-content">
+        <div class="hero-text">
+          <div class="badge-new">
+            <span class="sparkle">✨</span> Nuevo: Agentes IA Autónomos
+          </div>
+          <h1>Automatiza tu trabajo con el poder de la <span class="text-gradient">Inteligencia Artificial</span></h1>
+          <p class="hero-sub">
+            Diseña flujos de trabajo potentes de forma visual. Conecta tus herramientas favoritas con modelos de IA
+            avanzados para eliminar tareas repetitivas.
+          </p>
+          <div class="hero-btns">
+            <a href="#" class="btn btn-primary btn-lg">Comenzar ahora <svg width="20" height="20" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg></a>
+            <a href="#" class="btn btn-outline btn-lg">Ver demostración</a>
+          </div>
+          <div class="trust-badge">
+            <p>Confían en nosotros equipos de:</p>
+            <div class="logos-row">
+              <span>ACME Corp</span>
+              <span>TechStart</span>
+              <span>GlobalDynamics</span>
+              <span>FutureLabs</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="mac-window glass">
+            <div class="window-header">
+              <div class="dots">
+                <span class="red"></span><span class="yellow"></span><span class="green"></span>
+              </div>
+              <div class="address-bar">nexflow.app/workflow/customer-onboarding</div>
+            </div>
+            <div class="window-content" id="canvas-container">
+              <!-- Canvas animation will be injected here by JS -->
+              <div class="node node-start" style="top: 50%; left: 10%">
+                <div class="node-icon">⚡</div>
+                <div class="node-label">Webhook</div>
+              </div>
+              <div class="connection" style="width: 80px; top: 50%; left: 20%;"></div>
+              <div class="node node-ai" style="top: 50%; left: 35%">
+                <div class="node-icon">🤖</div>
+                <div class="node-label">Analizar Email</div>
+              </div>
+              <div class="connection" style="width: 80px; top: 50%; left: 45%;"></div>
+              <div class="node node-logic" style="top: 30%; left: 60%">
+                <div class="node-icon">📝</div>
+                <div class="node-label">Crear Ticket</div>
+              </div>
+              <div class="node node-success" style="top: 70%; left: 60%">
+                <div class="node-icon">✅</div>
+                <div class="node-label">Responder</div>
+              </div>
+
+              <!-- SVG lines for clearer connections -->
+              <svg class="connections-svg">
+                <path class="data-flow" d="M120 150 L200 150" stroke="#6366f1" stroke-width="2" />
+                <path class="data-flow" d="M300 150 L360 150 C380 150 380 100 400 100" stroke="#6366f1" stroke-width="2"
+                  fill="none" />
+                <path class="data-flow" d="M300 150 L360 150 C380 150 380 200 400 200" stroke="#6366f1" stroke-width="2"
+                  fill="none" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section id="features" class="features">
+      <div class="container">
+        <div class="section-header">
+          <h2>Todo lo que necesitas para automatizar</h2>
+          <p>Desde tareas simples hasta orquestación compleja de agentes.</p>
+        </div>
+        <div class="features-grid">
+          <div class="feature-card glass">
+            <div class="icon-box gradient-1">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              </svg>
+            </div>
+            <h3>Editor Visual de Flujos</h3>
+            <p>Arrastra y suelta nodos para construir tus automatizaciones. Sin código complejo, solo lógica visual
+              intuitiva.</p>
+          </div>
+          <div class="feature-card glass">
+            <div class="icon-box gradient-2">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                  d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+              </svg>
+            </div>
+            <h3>Agentes de IA Integrados</h3>
+            <p>Incorpora modelos como GPT-4, Claude y Llama directamente en tus flujos para analizar texto, imágenes y
+              tomar decisiones.</p>
+          </div>
+          <div class="feature-card glass">
+            <div class="icon-box gradient-3">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+              </svg>
+            </div>
+            <h3>+500 Integraciones</h3>
+            <p>Conecta CRM, bases de datos, redes sociales y herramientas internas con nuestra biblioteca de nodos
+              preconstruidos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Advanced Section -->
+    <section class="deep-dive">
+      <div class="container">
+        <div class="split-layout">
+          <div class="text-content">
+            <h2>Para desarrolladores y no-coders</h2>
+            <ul class="check-list">
+              <li>
+                <span class="check">✓</span>
+                <div>
+                  <strong>Código personalizado cuando lo necesites</strong>
+                  <p>Escribe JavaScript o Python dentro de cualquier nodo para lógica avanzada.</p>
+                </div>
+              </li>
+              <li>
+                <span class="check">✓</span>
+                <div>
+                  <strong>Depuración paso a paso</strong>
+                  <p>Inspecciona la ejecución de cada nodo en tiempo real para entender tus datos.</p>
+                </div>
+              </li>
+              <li>
+                <span class="check">✓</span>
+                <div>
+                  <strong>Hosting flexible</strong>
+                  <p>Usa nuestra nube o despliega en tu propia infraestructura (Self-hosted).</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="image-content glass">
+            <!-- Code snippet simulation -->
+            <pre><code class="language-javascript">
+// Función personalizada
+export async function run(items) {
+  const data = items[0].json;
+  
+  // Procesar con IA
+  const sentiment = await ai.analyze(
+    data.message
+  );
+
+  return {
+    ...data,
+    sentiment_score: sentiment.score
+  };
+}
+              </code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-card glass-card">
+          <h2>Empieza a construir el futuro hoy</h2>
+          <p>Únete a más de 10,000 equipos que ya automatizan con NexFlow.</p>
+          <div class="cta-buttons">
+            <a href="#" class="btn btn-primary btn-lg">Crear cuenta gratis</a>
+            <span class="sub-text">No requiere tarjeta de crédito</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container footer-content">
+        <div class="footer-col brand">
+          <h3>NexFlow</h3>
+          <p>La plataforma de automatización para la era de la IA.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Producto</h4>
+          <a href="#">Integraciones</a>
+          <a href="#">Plantillas</a>
+          <a href="#">Precios</a>
+        </div>
+        <div class="footer-col">
+          <h4>Recursos</h4>
+          <a href="#">Documentación</a>
+          <a href="#">API</a>
+          <a href="#">Comunidad</a>
+        </div>
+        <div class="footer-col">
+          <h4>Compañía</h4>
+          <a href="#">Sobre nosotros</a>
+          <a href="#">Blog</a>
+          <a href="#">Contacto</a>
+        </div>
+      </div>
+      <div class="container copyright">
+        <p>&copy; 2024 NexFlow Inc. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
